@@ -1,8 +1,8 @@
 import { useGetTodos } from '@/services/intents/todo.intent';
 
 function TestPage() {
-  const getTodos = useGetTodos();
-  const todos = getTodos.data;
+  const { data: todos } = useGetTodos();
+
   return (
     <div>
       <div>
